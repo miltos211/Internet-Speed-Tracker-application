@@ -141,7 +141,7 @@ def save_to_csv(data):
         return
 
     timestamp = datetime.now().isoformat().replace(':', '-')
-    filename = f"{timestamp}.csv"
+    filename = f"{timestamp}_fast.com.csv"
     with open(filename, 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['Metric', 'Value', 'Units'])
